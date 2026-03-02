@@ -76,5 +76,28 @@ The training curve (train vs Random opponents) is saved at:
 
 Add this image to the README by committing the file and using:
 
-```markdown
+``markdown
 ![Training Curve](task2_outputs/training_curve_random.png)
+
+How to Run
+A) Requirements
+
+Recommended: Python 3.10 (or 3.11)
+
+Install dependencies:
+
+pip install -U pip setuptools wheel
+pip install numpy==1.26.1 gym==0.26.2 gym-notices
+pip install chefshatgym
+pip install torch matplotlib pandas
+B) Run Training + Evaluation
+
+This project was run using a Jupyter Notebook / script. The workflow is:
+
+Baseline evaluation vs Random and Mixed opponents
+
+Train agent vs Random opponents (REINFORCE + baseline)
+
+Evaluate trained agent vs Random and Mixed opponents
+
+Save outputs to task2_outputs/
